@@ -50,7 +50,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'packing'
+project = u'documentation'
 copyright = u'2015, Jordi Andreu'
 author = u'Jordi Andreu'
 
@@ -226,7 +226,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'packing.tex', u'packing\\_demo Documentation',
+  (master_doc, 'documentation.tex', u'documentation\\_demo Documentation',
    u'Jordi Andreu', 'manual'),
 ]
 
@@ -256,7 +256,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'packing', u'packing Documentation',
+    (master_doc, 'documentation', u'documentation Documentation',
      [author], 1)
 ]
 
@@ -270,8 +270,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'packing', u'packing Documentation',
-   author, 'packing', 'One line description of project.',
+  (master_doc, 'documentation', u'documentation Documentation',
+   author, 'documentation', 'One line description of project.',
    'Miscellaneous'),
 ]
 
