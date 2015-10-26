@@ -17,10 +17,12 @@ if __name__ == "__main__":
 
     args_list = range(10)
 
-# Simple example using wrapper    
+# Timing a module function using a . The wrapper function is used to pass the
+# arguments.
     wrapped = wrapper(costly_func, args_list)
     print timeit.timeit(wrapped, number=1000)
     
 # Timing a member function:
-    t = timeit.Timer("to.function(args_list)", "from __main__ import Timed, args_list; to=Timed()") 
+    t = timeit.Timer("to.function(args_list)", "from __main__ import Timed, "
+                                               "args_list; to=Timed()")
     print t.timeit(number=1000)
