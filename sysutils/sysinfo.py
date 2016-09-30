@@ -1,4 +1,4 @@
-import subprocess
+import mysubprocess
 import logging
 
 
@@ -8,7 +8,7 @@ host = 'ibl1302'
 
 def _exec_remote_cmd(host, cmd):
     rem_cmd = 'ssh %s -C \"%s\"' % (host, cmd)
-    process = subprocess.Popen(rem_cmd, shell=True, stdout=subprocess.PIPE)
+    process = mysubprocess.Popen(rem_cmd, shell=True, stdout=mysubprocess.PIPE)
     process.wait()
     data, err = process.communicate()
     if process.returncode == 0 and not err:

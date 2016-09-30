@@ -11,18 +11,18 @@ class MyHandler(logging.StreamHandler):
         formatter = logging.Formatter(fmt)
         self.setFormatter(formatter)
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
 
-    log = logging.getLogger('root') #or __name__
-    log.setLevel('DEBUG')
-    log.addHandler(MyHandler())
+#    log = logging.getLogger(__name__) #or any string
+#    log.setLevel('DEBUG')
+#    log.addHandler(MyHandler())
 
     # 'application' code
-    log.debug('debug message')
-    log.info('info message')
-    log.warn('warn message')
-    log.error('error message')
-    log.critical('critical message')
+#    log.debug('debug message')
+##    log.info('info message')
+#    log.warn('warn message')
+#    log.error('error message')
+#    log.critical('critical message')
 
 # This has to be added to each module which use the custom logger
 # log = logging.getLogger('root') or __name__

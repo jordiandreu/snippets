@@ -9,8 +9,8 @@ class MyThread(threading.Thread):
 
 if __name__ == '__main__':
     print 'testing module threading'
-    t1 = MyThread()
-    t2 = MyThread()
+    t1 = MyThread(1)
+    t2 = MyThread(2)
 
     t1.run()
     t2.run()

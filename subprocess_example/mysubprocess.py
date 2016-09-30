@@ -27,7 +27,7 @@ def execute(cmd, split=False, timeout=12):
         cmd = shlex.split(cmd)
     print cmd
 
-    p = subprocess.Popen(cmd, stdout=subprocess.PIPE)
+    p = mysubprocess.Popen(cmd, stdout=mysubprocess.PIPE)
     t = time.time()
 
     while p.poll() is None:
