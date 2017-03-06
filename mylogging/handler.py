@@ -6,7 +6,7 @@ class MyHandler(logging.StreamHandler):
         logging.StreamHandler.__init__(self)
         #fmt = '%(asctime)s %(filename)-18s %(levelname)-8s: %(message)s'
         #fmt_date = '%Y-%m-%dT%T%Z'
-        fmt = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+        fmt = '%(asctime)s - %(name)-12s - %(levelname)s - %(message)s'
         #formatter = logging.Formatter(fmt, fmt_date)
         formatter = logging.Formatter(fmt)
         self.setFormatter(formatter)

@@ -25,3 +25,9 @@ class EnvVar(object):
         """
         print "setter"
         self._value = v
+
+
+if __name__ == '__main__':
+
+    a = EnvVar('var01')
+    print a.value

@@ -37,6 +37,13 @@ def my_generator():
 # except StopIteration, e:
 #     print "Stop iteration found"
 
+
+# def my_generator():
+#     for i in range(5):
+#         yield i
+
+
+
 def cycle_iterator():
     g = my_generator()
     for i in cycle(g):
@@ -45,5 +52,7 @@ def cycle_iterator():
 
 g = cycle_iterator()
 
-for i in g:
-    print i
+#for i in g:
+#    print i
+
+print next(g)

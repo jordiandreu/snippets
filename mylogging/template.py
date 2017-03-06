@@ -33,7 +33,7 @@ def get_logger(sconsole, sfile, rotatory=False):
     logger.setLevel(level)
 
     # create formatter object
-    fmt = '%(asctime)s [%(levelname)s] %(name)s:  %(message)s'
+    fmt = '%(asctime)s %(levelname)10s [%(name)s]: %(message)s'
     formatter = logging.Formatter(fmt)
 
     if sconsole:
